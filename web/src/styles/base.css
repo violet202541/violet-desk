@@ -1,0 +1,581 @@
+/* Violet · 信笺与打字机
+   浅色：米白信纸、紫罗兰墨水、金色火漆；夜间：烛光下的深色信笺。 */
+
+:root {
+  --paper: #f3ecdf;
+  --paper-deep: #e9dfcb;
+  --sheet: #fbf7ee;
+  --sheet-raised: #fffdf8;
+  --ink: #2a2238;
+  --ink-soft: #5b5068;
+  --ink-faint: #6a5f73; /* readable small text: ≥4.5:1 on paper and sidebar */
+  --ink-ghost: #8f8597; /* decoration only, never for words */
+  --rule: rgba(42, 34, 56, 0.12);
+  --rule-strong: rgba(42, 34, 56, 0.22);
+  --violet: #5e3f8f;
+  --violet-ink: #6e4fa3;
+  --violet-wash: rgba(110, 79, 163, 0.09);
+  --violet-wash-strong: rgba(110, 79, 163, 0.16);
+  --wax-a: #7b58b4;
+  --wax-b: #3f2468;
+  --wax-text: #f6ecdb;
+  --gold: #a07a32;
+  --gold-soft: rgba(176, 138, 62, 0.22);
+  --emerald: #2e6b58;
+  --emerald-wash: rgba(46, 107, 88, 0.1);
+  --danger: #a4453a;
+  --danger-wash: rgba(164, 69, 58, 0.09);
+  --shadow-sheet: 0 1px 0 rgba(255, 255, 255, 0.7) inset, 0 1px 2px rgba(60, 40, 20, 0.06),
+    0 10px 30px -18px rgba(60, 40, 20, 0.28);
+  --shadow-lift: 0 18px 40px -22px rgba(50, 30, 70, 0.45);
+  --glow: transparent;
+  --noise-opacity: 0.5;
+  --p-netease: #b2483f;
+  --p-qq: #2f7d63;
+  --p-kugou: #2f68a8;
+  --portrait-light: #fff6dc;
+  --portrait-desk: #d9c7a6;
+  --portrait-paper: #fbf7ee;
+  --portrait-white: #fffdf7;
+  --portrait-glass: #cfe3e0;
+  --portrait-machine: #2c2733;
+
+  --font-script: 'Pinyon Script', 'Cormorant Garamond', cursive;
+  --font-display: 'Cormorant Garamond', 'Huiwen Mincho', 'Songti SC', serif;
+  --font-title: 'Huiwen Mincho', 'Cormorant Garamond', 'Songti SC', serif;
+  --font-body: 'LXGW WenKai Screen', 'Cormorant Garamond', 'Microsoft YaHei UI', sans-serif;
+  --font-mono: 'Cutive Mono', 'LXGW WenKai Screen', ui-monospace, monospace;
+
+  --radius: 6px;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --sidebar: 92px;
+  --player: 78px;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --paper: #16131d;
+    --paper-deep: #1c1825;
+    --sheet: #211d2b;
+    --sheet-raised: #272233;
+    --ink: #efe6d6;
+    --ink-soft: #c2b6a6;
+    --ink-faint: #a3989f;
+    --ink-ghost: #8a7f8c;
+    --rule: rgba(239, 230, 214, 0.09);
+    --rule-strong: rgba(239, 230, 214, 0.18);
+    --violet: #c2abec;
+    --violet-ink: #b39be0;
+    --violet-wash: rgba(185, 160, 230, 0.1);
+    --violet-wash-strong: rgba(185, 160, 230, 0.17);
+    --wax-a: #8d6ac6;
+    --wax-b: #3a2160;
+    --gold: #e1ba6a;
+    --gold-soft: rgba(225, 186, 106, 0.18);
+    --emerald: #78c4a8;
+    --emerald-wash: rgba(120, 196, 168, 0.1);
+    --danger: #e59184;
+    --danger-wash: rgba(229, 145, 132, 0.1);
+    --shadow-sheet: 0 1px 0 rgba(255, 240, 220, 0.04) inset, 0 12px 32px -20px rgba(0, 0, 0, 0.7);
+    --shadow-lift: 0 20px 44px -20px rgba(0, 0, 0, 0.8);
+    --glow: rgba(225, 186, 106, 0.09);
+    --noise-opacity: 0.35;
+    --p-netease: #e5978c;
+    --p-qq: #7cc8a9;
+    --p-kugou: #8db6e8;
+    --portrait-light: rgba(225, 186, 106, 0.28);
+    --portrait-desk: #3a3140;
+    --portrait-paper: #2a2534;
+    --portrait-white: #e9e1d2;
+    --portrait-glass: #4b5f66;
+    --portrait-machine: #0f0d14;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --paper: #16131d;
+  --paper-deep: #1c1825;
+  --sheet: #211d2b;
+  --sheet-raised: #272233;
+  --ink: #efe6d6;
+  --ink-soft: #c2b6a6;
+  --ink-faint: #a3989f;
+  --ink-ghost: #8a7f8c;
+  --rule: rgba(239, 230, 214, 0.09);
+  --rule-strong: rgba(239, 230, 214, 0.18);
+  --violet: #c2abec;
+  --violet-ink: #b39be0;
+  --violet-wash: rgba(185, 160, 230, 0.1);
+  --violet-wash-strong: rgba(185, 160, 230, 0.17);
+  --wax-a: #8d6ac6;
+  --wax-b: #3a2160;
+  --gold: #e1ba6a;
+  --gold-soft: rgba(225, 186, 106, 0.18);
+  --emerald: #78c4a8;
+  --emerald-wash: rgba(120, 196, 168, 0.1);
+  --danger: #e59184;
+  --danger-wash: rgba(229, 145, 132, 0.1);
+  --shadow-sheet: 0 1px 0 rgba(255, 240, 220, 0.04) inset, 0 12px 32px -20px rgba(0, 0, 0, 0.7);
+  --shadow-lift: 0 20px 44px -20px rgba(0, 0, 0, 0.8);
+  --glow: rgba(225, 186, 106, 0.09);
+  --noise-opacity: 0.35;
+  --p-netease: #e5978c;
+  --p-qq: #7cc8a9;
+  --p-kugou: #8db6e8;
+  --portrait-light: rgba(225, 186, 106, 0.28);
+  --portrait-desk: #3a3140;
+  --portrait-paper: #2a2534;
+  --portrait-white: #e9e1d2;
+  --portrait-glass: #4b5f66;
+  --portrait-machine: #0f0d14;
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  user-select: none;
+}
+
+/* Paper fibres and a candle glow (visible only at night). */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: var(--noise-opacity);
+  background-image: radial-gradient(1200px 700px at 88% -10%, var(--glow), transparent 60%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .27 0 0 0 0 .2 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+::selection {
+  background: var(--violet-wash-strong);
+}
+
+input,
+textarea,
+.selectable {
+  user-select: text;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  background: none;
+  padding: 0;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+:focus-visible {
+  outline: 2px solid var(--violet-ink);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+a {
+  color: var(--violet-ink);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--rule-strong);
+  border-radius: 10px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* ---------------------------------------------------------------- typography */
+
+.eyebrow {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 15px;
+  letter-spacing: 0.06em;
+  color: var(--gold);
+}
+
+.title-cn {
+  font-family: var(--font-title);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+.title-cn {
+  /* Huiwen Mincho draws a few simplified characters (论 认 讨…) in old forms: only for headings we write ourselves. */
+}
+
+/* Song names, quotes and anything typed by the user. */
+.title-text {
+  font-family: var(--font-body);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.mono {
+  font-family: var(--font-mono);
+  letter-spacing: 0.01em;
+}
+
+.faint {
+  color: var(--ink-faint);
+}
+
+.soft {
+  color: var(--ink-soft);
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ---------------------------------------------------------------- controls */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 999px;
+  border: 1px solid var(--rule-strong);
+  color: var(--ink-soft);
+  background: transparent;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: background 0.2s var(--ease), color 0.2s var(--ease), border-color 0.2s var(--ease),
+    transform 0.2s var(--ease);
+}
+
+.btn:hover:not(:disabled) {
+  color: var(--ink);
+  border-color: var(--ink-faint);
+  background: var(--violet-wash);
+}
+
+.btn:disabled {
+  opacity: 0.42;
+}
+
+.btn.ghost {
+  border-color: transparent;
+}
+
+.btn.small {
+  height: 30px;
+  padding: 0 12px;
+  font-size: 13px;
+}
+
+/* The wax-sealed primary action. */
+.btn.wax {
+  color: var(--wax-text);
+  border: 0;
+  background: radial-gradient(120% 140% at 30% 20%, var(--wax-a), var(--wax-b));
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 -2px 0 rgba(0, 0, 0, 0.18) inset,
+    0 8px 18px -10px rgba(63, 36, 104, 0.8);
+  letter-spacing: 0.06em;
+}
+
+.btn.wax:hover:not(:disabled) {
+  color: #fff;
+  background: radial-gradient(120% 140% at 30% 20%, var(--wax-a), var(--wax-b));
+  transform: translateY(-1px);
+}
+
+.btn.wax:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+/* Sending songs back: the same pressed-wax button, in a returned-letter red. */
+.btn.wax.red {
+  background: radial-gradient(120% 140% at 30% 20%, #bf5a4c, #7a2a23);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 -2px 0 rgba(0, 0, 0, 0.18) inset,
+    0 8px 18px -10px rgba(122, 42, 35, 0.85);
+}
+.btn.wax.red:hover:not(:disabled) {
+  background: radial-gradient(120% 140% at 30% 20%, #c9665a, #84302a);
+}
+
+.btn.danger:hover:not(:disabled) {
+  color: var(--danger);
+  border-color: var(--danger);
+  background: var(--danger-wash);
+}
+
+.icon-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  color: var(--ink-soft);
+  transition: background 0.2s var(--ease), color 0.2s var(--ease);
+}
+
+.icon-btn:hover:not(:disabled) {
+  background: var(--violet-wash);
+  color: var(--ink);
+}
+
+.icon-btn:disabled {
+  opacity: 0.35;
+}
+
+.field {
+  height: 40px;
+  border: 0;
+  border-bottom: 1px solid var(--rule-strong);
+  background: transparent;
+  padding: 0 2px;
+  outline: none;
+  transition: border-color 0.2s var(--ease);
+}
+
+.field:focus {
+  border-color: var(--violet-ink);
+}
+
+.field::placeholder {
+  color: var(--ink-faint);
+  font-style: normal;
+}
+
+.chip {
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  color: var(--ink-soft);
+  border: 1px solid transparent;
+  transition: all 0.2s var(--ease);
+}
+
+.chip:hover {
+  color: var(--ink);
+}
+
+.chip.on {
+  color: var(--violet-ink);
+  background: var(--violet-wash);
+  border-color: color-mix(in srgb, var(--violet-ink) 25%, transparent);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.sheet {
+  background: var(--sheet);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sheet);
+  border: 1px solid var(--rule);
+}
+
+/* Perforated postage-stamp edge. */
+.stamp-edge {
+  --hole: 3px;
+  --cover-inset: calc(var(--hole) + 2px);
+  padding: calc(var(--hole) + 2px);
+  background: var(--sheet-raised);
+  -webkit-mask: radial-gradient(circle var(--hole) at var(--hole) var(--hole), #0000 97%, #000) calc(-1 * var(--hole))
+      calc(-1 * var(--hole)) / calc(var(--hole) * 3) calc(var(--hole) * 3) round,
+    linear-gradient(#000 0 0) content-box;
+  mask: radial-gradient(circle var(--hole) at var(--hole) var(--hole), #0000 97%, #000) calc(-1 * var(--hole))
+      calc(-1 * var(--hole)) / calc(var(--hole) * 3) calc(var(--hole) * 3) round,
+    linear-gradient(#000 0 0) content-box;
+}
+
+.fleuron {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--gold);
+  font-family: var(--font-display);
+}
+
+.fleuron::before,
+.fleuron::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-soft) 30%, var(--gold-soft) 70%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* 浅橡木与黄铜：书桌上的鸿雁信插。 */
+/* Pale honey oak by the morning window; by night the same wood under a desk lamp. */
+:root {
+  --oak-hi: #ecdcbd;
+  --oak: #dcc398;
+  --oak-mid: #cfb07f;
+  --oak-lo: #b9935f;
+  --oak-edge: #9a7646;
+  --oak-shade: rgba(96, 62, 24, 0.42);
+  --oak-recess-top: #ae8a5c;
+  --oak-recess: #ccad80;
+  --oak-recess-floor: #dcc499;
+  --brass: #b38f4c;
+  --brass-hi: #e7cf92;
+  --label-paper: #fcf7ea;
+  --label-ink: #3a2d22;
+  --oak-light: rgba(255, 246, 214, 0.42);
+  --oak-lamp: transparent;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --oak-hi: #7a5e40;
+    --oak: #614a33;
+    --oak-mid: #523e2a;
+    --oak-lo: #3f2f20;
+    --oak-edge: #2e2217;
+    --oak-shade: rgba(0, 0, 0, 0.55);
+    --oak-recess-top: #1e1610;
+    --oak-recess: #2c2117;
+    --oak-recess-floor: #3b2c1e;
+    --brass: #b8944f;
+    --brass-hi: #e3c47f;
+    --label-paper: #eadfc8;
+    --label-ink: #2b2219;
+    --oak-light: rgba(170, 190, 235, 0.08);
+    --oak-lamp: rgba(255, 178, 92, 0.26);
+  }
+}
+:root[data-theme='dark'] {
+  --oak-hi: #7a5e40;
+  --oak: #614a33;
+  --oak-mid: #523e2a;
+  --oak-lo: #3f2f20;
+  --oak-edge: #2e2217;
+  --oak-shade: rgba(0, 0, 0, 0.55);
+  --oak-recess-top: #1e1610;
+  --oak-recess: #2c2117;
+  --oak-recess-floor: #3b2c1e;
+  --brass: #b8944f;
+  --brass-hi: #e3c47f;
+  --label-paper: #eadfc8;
+  --label-ink: #2b2219;
+  --oak-light: rgba(170, 190, 235, 0.08);
+  --oak-lamp: rgba(255, 178, 92, 0.26);
+}
+
+/* ---------------------------------------------------------------- stationery
+   A letter keeps daytime ink on its own paper, even by candlelight: the sheet only dims, like paper under a lamp. */
+.daylight {
+  --ink: #2a2238;
+  --ink-soft: #5b5068;
+  --ink-faint: #6a5f73;
+  --rule: rgba(42, 34, 56, 0.12);
+  --rule-strong: rgba(42, 34, 56, 0.22);
+  --violet-ink: #6e4fa3;
+  --violet-wash: rgba(110, 79, 163, 0.09);
+  --violet-wash-strong: rgba(110, 79, 163, 0.16);
+  --sheet: #fbf7ee;
+  --sheet-raised: #fffdf8;
+  --gold: #a07a32;
+  --danger: #a4453a;
+  color: var(--ink);
+}
+.letter-sheet {
+  position: relative;
+  isolation: isolate;
+}
+.letter-sheet::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: var(--paper-img, none) 0 0 / 420px, #f7f0e2;
+}
+:root[data-theme='dark'] .letter-sheet::before {
+  filter: brightness(0.8) saturate(0.92);
+}
+/* The veiled script on a letter is written in that letter's ink. */
+.letter-sheet {
+  --cipher-ink: var(--letter-ink);
+}
+/* The heading at the top of the sheet: a painted spray, or the postal company's typed letterhead. */
+.letterhead {
+  display: grid;
+  justify-items: center;
+  margin: -18px 0 6px;
+  pointer-events: none;
+}
+.letterhead img {
+  width: min(62%, 420px);
+  height: auto;
+  opacity: 0.92;
+}
+.letterhead .post {
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+  padding: 0 0 8px;
+  font-family: 'Cutive Mono', monospace;
+  color: var(--letter-ink, #4a3474);
+  letter-spacing: 0.22em;
+  font-size: 12px;
+  border-bottom: 1px double currentColor;
+  width: min(70%, 440px);
+  opacity: 0.8;
+}
+.letterhead .post small {
+  font-size: 9.5px;
+  letter-spacing: 0.3em;
+}

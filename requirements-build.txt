@@ -1,0 +1,5 @@
+# 仅在重建字体、图标或打包 exe 时需要
+fonttools>=4.50
+brotli>=1.1
+Pillow>=10
+pyinstaller>=6.10

@@ -1,0 +1,4 @@
+pywebview>=5,<7
+mutagen>=1.47,<2
+beautifulsoup4>=4.12,<5
+quickjs>=1.19,<2

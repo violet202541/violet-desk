@@ -1,0 +1,28 @@
+{
+  "name": "violet-web",
+  "private": true,
+  "version": "4.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "fonts": "python ../tools/build_fonts.py",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@chinese-fonts/xiaolai": "3.0.0",
+    "@fontsource/cormorant-garamond": "5.2.11",
+    "@fontsource/cutive-mono": "5.2.8",
+    "@fontsource/long-cang": "5.3.0",
+    "@fontsource/ma-shan-zheng": "5.3.1",
+    "@fontsource/pinyon-script": "5.2.8",
+    "@fontsource/zcool-xiaowei": "5.3.0",
+    "@fontsource/zhi-mang-xing": "5.3.0",
+    "lxgw-wenkai-screen-webfont": "1.7.0",
+    "vue": "3.5.42"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "6.0.8",
+    "vite": "7.3.6"
+  }
+}

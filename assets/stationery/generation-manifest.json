@@ -1,0 +1,178 @@
+{
+  "generator": "built-in image_gen",
+  "assets": [
+    {
+      "file": "wax/violet.png",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "prompt": "A single blank sealing-wax seal photographed straight from above, centered, on a fully transparent background. Irregular organic outer edge where the melted wax spread and pooled, with a few soft drips and thin translucent edges. In the middle, a smooth, slightly sunken flat circular pressed area about 62% of the diameter, completely blank: no emblem, no letters, no pattern. Subtle realistic wax sheen, tiny bubbles and fine surface ripples near the rim. Soft diffused light from the top-left and a gentle highlight on the raised rim. The wax colour is deep violet purple (#5b3a8c). No shadow outside the wax, no paper, no text. Square 1024×1024, photorealistic macro product shot."
+    },
+    {
+      "file": "wax/wine.png",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "prompt": "A single blank sealing-wax seal photographed straight from above, centered, on a fully transparent background. Irregular organic outer edge where the melted wax spread and pooled, with a few soft drips and thin translucent edges. In the middle, a smooth, slightly sunken flat circular pressed area about 62% of the diameter, completely blank: no emblem, no letters, no pattern. Subtle realistic wax sheen, tiny bubbles and fine surface ripples near the rim. Soft diffused light from the top-left and a gentle highlight on the raised rim. The wax colour is classic wine red (#8e2a2f). No shadow outside the wax, no paper, no text. Square 1024×1024, photorealistic macro product shot."
+    },
+    {
+      "file": "wax/emerald.png",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "prompt": "A single blank sealing-wax seal photographed straight from above, centered, on a fully transparent background. Irregular organic outer edge where the melted wax spread and pooled, with a few soft drips and thin translucent edges. In the middle, a smooth, slightly sunken flat circular pressed area about 62% of the diameter, completely blank: no emblem, no letters, no pattern. Subtle realistic wax sheen, tiny bubbles and fine surface ripples near the rim. Soft diffused light from the top-left and a gentle highlight on the raised rim. The wax colour is emerald green (#1f6a52). No shadow outside the wax, no paper, no text. Square 1024×1024, photorealistic macro product shot."
+    },
+    {
+      "file": "wax/gold.png",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "prompt": "A single blank sealing-wax seal photographed straight from above, centered, on a fully transparent background. Irregular organic outer edge where the melted wax spread and pooled, with a few soft drips and thin translucent edges. In the middle, a smooth, slightly sunken flat circular pressed area about 62% of the diameter, completely blank: no emblem, no letters, no pattern. Subtle realistic wax sheen, tiny bubbles and fine surface ripples near the rim. Soft diffused light from the top-left and a gentle highlight on the raised rim. The wax colour is antique gold with a soft metallic lustre (#b08a3e). No shadow outside the wax, no paper, no text. Square 1024×1024, photorealistic macro product shot."
+    },
+    {
+      "file": "wax/ink-blue.png",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "prompt": "A single blank sealing-wax seal photographed straight from above, centered, on a fully transparent background. Irregular organic outer edge where the melted wax spread and pooled, with a few soft drips and thin translucent edges. In the middle, a smooth, slightly sunken flat circular pressed area about 62% of the diameter, completely blank: no emblem, no letters, no pattern. Subtle realistic wax sheen, tiny bubbles and fine surface ripples near the rim. Soft diffused light from the top-left and a gentle highlight on the raised rim. The wax colour is deep ink blue (#25365e). No shadow outside the wax, no paper, no text. Square 1024×1024, photorealistic macro product shot."
+    },
+    {
+      "file": "wax/charcoal.png",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "prompt": "A single blank sealing-wax seal photographed straight from above, centered, on a fully transparent background. Irregular organic outer edge where the melted wax spread and pooled, with a few soft drips and thin translucent edges. In the middle, a smooth, slightly sunken flat circular pressed area about 62% of the diameter, completely blank: no emblem, no letters, no pattern. Subtle realistic wax sheen, tiny bubbles and fine surface ripples near the rim. Soft diffused light from the top-left and a gentle highlight on the raised rim. The wax colour is charcoal black with a faint warm sheen (#2a2627). No shadow outside the wax, no paper, no text. Square 1024×1024, photorealistic macro product shot."
+    },
+    {
+      "file": "wax/pearl.png",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "prompt": "A single blank sealing-wax seal photographed straight from above, centered, on a fully transparent background. Irregular organic outer edge where the melted wax spread and pooled, with a few soft drips and thin translucent edges. In the middle, a smooth, slightly sunken flat circular pressed area about 62% of the diameter, completely blank: no emblem, no letters, no pattern. Subtle realistic wax sheen, tiny bubbles and fine surface ripples near the rim. Soft diffused light from the top-left and a gentle highlight on the raised rim. The wax colour is pearl white with a soft iridescent sheen (#ece6dc). No shadow outside the wax, no paper, no text. Square 1024×1024, photorealistic macro product shot."
+    },
+    {
+      "file": "wax/sakura.png",
+      "width": 1024,
+      "height": 1024,
+      "transparent": true,
+      "prompt": "A single blank sealing-wax seal photographed straight from above, centered, on a fully transparent background. Irregular organic outer edge where the melted wax spread and pooled, with a few soft drips and thin translucent edges. In the middle, a smooth, slightly sunken flat circular pressed area about 62% of the diameter, completely blank: no emblem, no letters, no pattern. Subtle realistic wax sheen, tiny bubbles and fine surface ripples near the rim. Soft diffused light from the top-left and a gentle highlight on the raised rim. The wax colour is soft cherry-blossom pink (#e2a6b4). No shadow outside the wax, no paper, no text. Square 1024×1024, photorealistic macro product shot."
+    },
+    {
+      "file": "stamps/harbor.png",
+      "width": 1024,
+      "height": 1536,
+      "transparent": false,
+      "prompt": "Delicate watercolor illustration for a vintage postage stamp, in the style of the anime Violet Evergarden: a soft-focus European port town of the early 20th century, gentle light, airy pale palette of lavender, cream, sea-blue and muted gold, fine ink linework under transparent washes, visible paper grain. Scene: a small harbor with moored sailboats and red-roofed houses along the quay. Composed to fill a portrait stamp frame with a clear focal subject and simple background. No perforations, no border, no text, no numbers, no people’s faces in close-up, no logos. 1024×1536."
+    },
+    {
+      "file": "stamps/clocktower.png",
+      "width": 1024,
+      "height": 1536,
+      "transparent": false,
+      "prompt": "Delicate watercolor illustration for a vintage postage stamp, in the style of the anime Violet Evergarden: a soft-focus European port town of the early 20th century, gentle light, airy pale palette of lavender, cream, sea-blue and muted gold, fine ink linework under transparent washes, visible paper grain. Scene: a stone clock tower over a cobbled town square with pigeons. Composed to fill a portrait stamp frame with a clear focal subject and simple background. No perforations, no border, no text, no numbers, no people’s faces in close-up, no logos. 1024×1536."
+    },
+    {
+      "file": "stamps/postoffice.png",
+      "width": 1024,
+      "height": 1536,
+      "transparent": false,
+      "prompt": "Delicate watercolor illustration for a vintage postage stamp, in the style of the anime Violet Evergarden: a soft-focus European port town of the early 20th century, gentle light, airy pale palette of lavender, cream, sea-blue and muted gold, fine ink linework under transparent washes, visible paper grain. Scene: the facade of a postal company building with arched windows and a round clock. Composed to fill a portrait stamp frame with a clear focal subject and simple background. No perforations, no border, no text, no numbers, no people’s faces in close-up, no logos. 1024×1536."
+    },
+    {
+      "file": "stamps/tram.png",
+      "width": 1024,
+      "height": 1536,
+      "transparent": false,
+      "prompt": "Delicate watercolor illustration for a vintage postage stamp, in the style of the anime Violet Evergarden: a soft-focus European port town of the early 20th century, gentle light, airy pale palette of lavender, cream, sea-blue and muted gold, fine ink linework under transparent washes, visible paper grain. Scene: a green tram climbing a narrow street with hanging flower baskets. Composed to fill a portrait stamp frame with a clear focal subject and simple background. No perforations, no border, no text, no numbers, no people’s faces in close-up, no logos. 1024×1536."
+    },
+    {
+      "file": "stamps/flowerfield.png",
+      "width": 1024,
+      "height": 1536,
+      "transparent": false,
+      "prompt": "Delicate watercolor illustration for a vintage postage stamp, in the style of the anime Violet Evergarden: a soft-focus European port town of the early 20th century, gentle light, airy pale palette of lavender, cream, sea-blue and muted gold, fine ink linework under transparent washes, visible paper grain. Scene: a gently rolling field of violet flowers under a wide sky. Composed to fill a portrait stamp frame with a clear focal subject and simple background. No perforations, no border, no text, no numbers, no people’s faces in close-up, no logos. 1024×1536."
+    },
+    {
+      "file": "stamps/lighthouse.png",
+      "width": 1024,
+      "height": 1536,
+      "transparent": false,
+      "prompt": "Delicate watercolor illustration for a vintage postage stamp, in the style of the anime Violet Evergarden: a soft-focus European port town of the early 20th century, gentle light, airy pale palette of lavender, cream, sea-blue and muted gold, fine ink linework under transparent washes, visible paper grain. Scene: a white lighthouse on a cliff with gulls and calm sea. Composed to fill a portrait stamp frame with a clear focal subject and simple background. No perforations, no border, no text, no numbers, no people’s faces in close-up, no logos. 1024×1536."
+    },
+    {
+      "file": "stamps/snowpeak.png",
+      "width": 1024,
+      "height": 1536,
+      "transparent": false,
+      "prompt": "Delicate watercolor illustration for a vintage postage stamp, in the style of the anime Violet Evergarden: a soft-focus European port town of the early 20th century, gentle light, airy pale palette of lavender, cream, sea-blue and muted gold, fine ink linework under transparent washes, visible paper grain. Scene: distant snow-covered mountains seen beyond a pine forest and a small rail bridge. Composed to fill a portrait stamp frame with a clear focal subject and simple background. No perforations, no border, no text, no numbers, no people’s faces in close-up, no logos. 1024×1536."
+    },
+    {
+      "file": "stamps/sunset-sea.png",
+      "width": 1024,
+      "height": 1536,
+      "transparent": false,
+      "prompt": "Delicate watercolor illustration for a vintage postage stamp, in the style of the anime Violet Evergarden: a soft-focus European port town of the early 20th century, gentle light, airy pale palette of lavender, cream, sea-blue and muted gold, fine ink linework under transparent washes, visible paper grain. Scene: the sea at sunset with a lone ship on the horizon, warm gold and lilac clouds. Composed to fill a portrait stamp frame with a clear focal subject and simple background. No perforations, no border, no text, no numbers, no people’s faces in close-up, no logos. 1024×1536."
+    },
+    {
+      "file": "paper/parchment.png",
+      "width": 1024,
+      "height": 1024,
+      "transparent": false,
+      "prompt": "Seamless tileable paper texture, flat top-down scan, even lighting, no shadows, no folds, no vignette, no text. Very subtle and low-contrast so handwriting on top stays perfectly readable. Paper type: warm cream parchment with faint fibres and slight mottling. 1024×1024, tiles seamlessly on all edges."
+    },
+    {
+      "file": "paper/lilac-laid.png",
+      "width": 1024,
+      "height": 1024,
+      "transparent": false,
+      "prompt": "Seamless tileable paper texture, flat top-down scan, even lighting, no shadows, no folds, no vignette, no text. Very subtle and low-contrast so handwriting on top stays perfectly readable. Paper type: pale lilac laid paper with fine horizontal laid lines and sparse chain lines. 1024×1024, tiles seamlessly on all edges."
+    },
+    {
+      "file": "paper/kraft.png",
+      "width": 1024,
+      "height": 1024,
+      "transparent": false,
+      "prompt": "Seamless tileable paper texture, flat top-down scan, even lighting, no shadows, no folds, no vignette, no text. Very subtle and low-contrast so handwriting on top stays perfectly readable. Paper type: light kraft paper, warm tan, soft fibres, not too dark. 1024×1024, tiles seamlessly on all edges."
+    },
+    {
+      "file": "paper/pressed-petals.png",
+      "width": 1024,
+      "height": 1024,
+      "transparent": false,
+      "prompt": "Seamless tileable paper texture, flat top-down scan, even lighting, no shadows, no folds, no vignette, no text. Very subtle and low-contrast so handwriting on top stays perfectly readable. Paper type: handmade cotton paper in off-white with a few tiny pressed violet petals and leaf fragments embedded sparsely. 1024×1024, tiles seamlessly on all edges."
+    },
+    {
+      "file": "letterhead/violets.png",
+      "width": 1536,
+      "height": 512,
+      "transparent": true,
+      "prompt": "A delicate letterhead ornament on a fully transparent background, centered horizontally, for the top of a letter: a small spray of violets with two leaves and a thin ribbon. Fine watercolor and thin ink line, soft lavender, sage and muted gold palette, lots of empty space, elegant and light, in the gentle style of Violet Evergarden. No text, no frame, no background. 1536×512."
+    },
+    {
+      "file": "letterhead/lily-of-valley.png",
+      "width": 1536,
+      "height": 512,
+      "transparent": true,
+      "prompt": "A delicate letterhead ornament on a fully transparent background, centered horizontally, for the top of a letter: a sprig of lily-of-the-valley curving to one side. Fine watercolor and thin ink line, soft lavender, sage and muted gold palette, lots of empty space, elegant and light, in the gentle style of Violet Evergarden. No text, no frame, no background. 1536×512."
+    },
+    {
+      "file": "letterhead/gold-flourish.png",
+      "width": 1536,
+      "height": 512,
+      "transparent": true,
+      "prompt": "A delicate letterhead ornament on a fully transparent background, centered horizontally, for the top of a letter: a symmetric thin gold calligraphic flourish with a tiny star at the centre. Fine watercolor and thin ink line, soft lavender, sage and muted gold palette, lots of empty space, elegant and light, in the gentle style of Violet Evergarden. No text, no frame, no background. 1536×512."
+    }
+  ],
+  "refinements": {
+    "stamps/postoffice.png": "Removed Roman numerals, retained hands and plain ticks.",
+    "stamps/clocktower.png": "Regenerated with plain clock tick marks, no numerals, text or signatures.",
+    "paper/lilac-laid.png": "Refined edge continuity and uniform illumination for tiling.",
+    "letterhead/gold-flourish.png": "Simplified to thin symmetric gold curls with a tiny central star.",
+    "stamps/flowerfield.png": "Removed foreground person and filled with violet flowers."
+  },
+  "validationNotes": [
+    "23 PNG assets saved at the requested dimensions.",
+    "Wax and letterhead preserve genuine alpha transparency.",
+    "Paper textures inspected as 2x2 repeats. Lilac laid paper retains slight line discontinuities at tile seams; pixel-exact seamlessness is not certified."
+  ]
+}
